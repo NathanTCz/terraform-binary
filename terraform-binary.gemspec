@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["nathan.cazell@imageapi.com"]
 
   spec.summary       = "A gem to install and interface with HashiCorp's Terraform utility"
-  spec.homepage      = 'https://github.com/nathantcz/packer-binary'
+  spec.homepage      = 'https://github.com/nathantcz/terraform-binary'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|

@@ -1,3 +1,7 @@
+[![Gem Version](https://badge.fury.io/rb/terraform-binary.svg)](https://badge.fury.io/rb/terraform-binary)
+[![Build Status](https://travis-ci.org/NathanTCz/terraform-binary.svg?branch=master)](https://travis-ci.org/NathanTCz/terraform-binary)
+[![Coverage Status](https://coveralls.io/repos/github/NathanTCz/terraform-binary/badge.svg?branch=master)](https://coveralls.io/github/NathanTCz/terraform-binary?branch=master)
+[![Documentation](http://img.shields.io/badge/docs-rdoc.info-blue.svg)](http://www.rubydoc.info/gems/terraform-binary)
 # Terraform::Binary
 
 A gem to install and interface with HashiCorp's Terraform utility

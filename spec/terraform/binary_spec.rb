@@ -7,12 +7,26 @@ module Terraform
     end
 
     # Define Public interface
-    it { should respond_to(:build) }
-    it { should respond_to(:fix) }
-    it { should respond_to(:inspect) }
+    it { should respond_to(:apply) }
+    it { should respond_to(:console) }
+    it { should respond_to(:destroy) }
+    it { should respond_to(:env) }
+    it { should respond_to(:fmt) }
+    it { should respond_to(:get) }
+    it { should respond_to(:graph) }
+    it { should respond_to(:import) }
+    it { should respond_to(:init) }
+    it { should respond_to(:output) }
+    it { should respond_to(:plan) }
+    it { should respond_to(:providers) }
     it { should respond_to(:push) }
+    it { should respond_to(:refresh) }
+    it { should respond_to(:show) }
+    it { should respond_to(:taint) }
+    it { should respond_to(:untaint) }
     it { should respond_to(:validate) }
     it { should respond_to(:version) }
+    it { should respond_to(:workspace) }
 
     before do
       Terraform::Binary.configure do |config|
