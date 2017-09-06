@@ -7,6 +7,7 @@ module Terraform
       end
 
       it 'inflates a zip' do
+        FileUtils.mkdir_p('/tmp/spec')
         Compressor.extract('/tmp/spec.zip', '/tmp/spec')
         expect(Dir.exist?('/tmp/spec')).to be true
         FileUtils.rm_rf('/tmp/spec')
