@@ -38,8 +38,7 @@ module Terraform
         require 'open-uri'
 
         File.open("#{@download_path}/#{@download_filename}", 'wb') do |saved_file|
-          # the following "open" is provided by open-uri
-          open("https://#{download_domain}/#{download_uri}", 'rb') do |read_file|
+          URI.open("https://#{download_domain}/#{download_uri}", 'rb') do |read_file|
             saved_file.write(read_file.read)
           end
         end
