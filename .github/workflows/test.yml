@@ -1,0 +1,23 @@
+name: Test
+
+on:
+  push:
+    pull_request: [ master ]
+
+jobs:
+  build:
+    name: Test
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Ruby 2.7
+      uses: ruby/setup-ruby@v1.89.0
+      with:
+        ruby-version: 2.7.x
+
+    - name: Run Specs
+      run: bundle exec rake spec
