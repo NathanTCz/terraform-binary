@@ -30,7 +30,7 @@ module Terraform
 
     before do
       Terraform::Binary.configure do |config|
-        config.version = '0.10.3'
+        config.version = '1.1.2'
         config.download_path = '/tmp/tests'
       end
     end
