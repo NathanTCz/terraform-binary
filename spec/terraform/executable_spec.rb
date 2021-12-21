@@ -1,10 +1,10 @@
 module Terraform
   module Binary
     describe Executable do
-      context 'Terraform v0.10.3' do
+      context 'Terraform v1.1.2' do
         before do
           Terraform::Binary.configure do |config|
-            config.version = '0.10.3'
+            config.version = '1.1.2'
             config.download_path = '/tmp'
           end
         end
